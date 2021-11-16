@@ -71,10 +71,12 @@ for n in range(sheet_num):
     month_sum = 0
     for m in month_dict:
         month_sum += month_dict[m]
-        print('%s月%s的销售件数占比为%.2f%%' % (month, m, month_dict[m] / month_sum * 100), end=' ')
+    for n in month_dict:
+        print('%s月%s的销售件数占比为%.2f%%' % (month, n, month_dict[n] / month_sum * 100), end=' ')
     print('')
     month += 1
 print('')
+
 
 '''
 最畅销的衣服
